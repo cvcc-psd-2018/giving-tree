@@ -76,7 +76,7 @@ html, body {
   background-color: #080808;
 }
 
-.delref:hover {
+#addRef > li:hover .delref {
   color: #FFF;
   background-color: #FF4444;
 

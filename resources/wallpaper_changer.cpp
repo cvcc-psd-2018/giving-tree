@@ -8,6 +8,8 @@ In order to build this program, you need visual studio
 It can be installed here: https://visualstudio.microsoft.com/downloads/
 
 I recommend the free version
+
+Tutorial on how to build it: http://youtu.be/bPyeP2R0W_Q
 */
 
 #include <iostream>

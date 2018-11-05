@@ -20,7 +20,7 @@ html, body {
 }
 
 #content {
-  padding-left: 216px;
+  padding-left: 232px;
   padding-right: 10%;
 }
 
@@ -76,7 +76,7 @@ html, body {
   background-color: #080808;
 }
 
-#addRef > li:hover .delref {
+.delref:hover {
   color: #FFF;
   background-color: #FF4444;
 
@@ -120,6 +120,11 @@ a:hover {
   color: #BBB;
   height: 45px;
   padding-top: 5px;
+}
+
+.note {
+  color: #557711;
+  text-decoration: italic;
 }
 
 ::selection {

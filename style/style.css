@@ -132,3 +132,10 @@ a:hover {
   background-color: #8800FF55;
   border-radius: 3px;
 }
+
+code {
+  background-color: #000000;
+  color: #00FF00;
+  border-radius: 5px;
+  padding: 2px;
+}

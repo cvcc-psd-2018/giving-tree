@@ -70,6 +70,35 @@
       <h2 id="JavaChapter2">Java Chapter 2</h2>
       <h2 id="JavaChapter3">Java Chapter 3</h2>
       <h2 id="JavaChapter4">Java Chapter 4</h2>
+      <h3 class="glossary-entry" id="entryBoolean">Boolean</h3>
+        <p>A boolean is a "binary" value, meaning it only has two possible values -- True or False, yes or no, one or zero. In most programming languages with boolean support such as Java, it is a primitive data type that can be either True or False.</p>
+      <h3 class="glossary-entry" id="entryRelationalOperator">Relational Operator</h3>
+        <p>A relational operator is an operator that makes a comparison between its two operands, and returns a boolean True or False. They're mostly mathematical comparisons, such as equals (<code>==</code>), checking if the numbers are identical, or not equals (<code>!=</code>), checking if the numbers are different, greater than, greater than or equal to, less than, and less than or equal to (<code>> < >= <=</code>, respectively), which should all be more-or-less self-explanatory if you've taken a math class in the past five years.</p>
+      <h3 class="glossary-entry" id="entryLogicalOperator">Logical Operator</h3>
+        <p>A logical operator processes a number of boolean values, and outputs a new boolean based on them. The three major logical operators are AND (<code>&&</code>), OR (<code>||</code>), and NOT (<code>!</code>). AND only returns TRUE if both its operands are TRUE, while OR will return TRUE if <em>either</em> operand is true. NOT only takes one operand, and returns the opposite boolean value (meaning that TRUE becomes FALSE and vice versa).</p>
+      <h3 class="glossary-entry" id="entryShortCircuitEvaluation">Short-Circuit Evaluation</h3>
+        <p>Short-circuiting is when a logical operator only evaluates one operand. Since AND only needs one operand to be false for the whole expression to be false, it immediately evaluates to false without even checking the other operand if the left operand is false. OR, on the other hand, only requires one statement to be <em>true</em> for the whole statement to evaluate as such, so it also short-circuits if the left operand is true, outputting true without even checking the right operand.
+        <br /><br />
+        This is all a little bit confusing, so it can be boiled down to this in practice: The left operand in an AND statement should be the one most likely to be false, and in an OR statement, should be the one most likely to be true.
+        </p>
+      <h3 class="glossary-entry" id="entrySelectionStructures">Selection Structures</h3>
+        <p>Selection structures are the most basic <em>control flow structures</em>, which change how the flow of logic in a program works. These in particular come in the form of if/else and switch statements.
+        <br /><br />
+        IF statements come in the form of <code>if (condition) {statements}</code>.<br />
+        The condition, in most languages, should be a boolean. If the boolean evaluates to TRUE, then the statements run. Otherwise, they don't. It's a lot like English in that regard -- "if we have coffee, get me some" is much the same as "<code>if (coffee > 0) {getCoffee();}</code>".
+        <br />
+        ELSE statements only run if the condition of the IF statement is false -- in other words, only if the IF statement doesn't run. It's almost like making a second IF statement with <code>!condition</code> as its own condition.
+        <br />
+        These can be paired together with an ELSE IF statement, which only has its condition checked if the previous IF statement was false. You can go to extreme depths with this, with a huge chain of IF/ELSE IF/[...]/ELSE IF/ELSE.
+        <br />
+        <span class="note">Fun fact: Most software on the market that touts "Advanced Artificial Intelligence" just has a bunch of really long IF/ELSE chains. If you have the patience and the inclination, you too can make software that <em>looks</em> like it's really thinking. Try it out sometime. It's incredibly tedious, but it's possible!</span>
+        <br /><br />
+        Switch statements are quite similar to IF/ELSE statements. Given a single condition of almost <em>any</em> primitive data type, you can make a series of CASEs -- each of which are similar in function to "<code>if (condition == thisCase)</code>". If the condition matches a case, then the code <em>starts</em> running there, but doesn't stop until it reaches a BREAK statement. This means that, if you write multiple CASEs without a BREAK in between them, then the code won't skip over the cases that don't match your condition. This might actually be a good thing sometimes, which is why it happens, but it can cause problems just as often as it helps solve them if you aren't careful.
+        <br />
+        SWITCHes can also have a DEFAULT case, which the code jumps to when none of the other CASEs match.
+        </p>
+      <h3 class="glossary-entry" id="entryTernaryOperator">Ternary Operator</h3>
+        <p>The ternary operator looks and sounds complicated, but it's actually really simple! It has the syntax <code>condition ? ifTrueDoThis : ifFalseDoThis</code>. It's identical to an IF/ELSE statement of <code>if (condition) {ifTrueDoThis} else {ifFalseDoThis}</code>. You don't strictly need to use or even necessarily know it, but it can be a handy way to save time and space if you have a small conditional statement to make.</p>
       <h2 id="SystemsChapter1">Systems Chapter 1</h2>
     </div>
   </div>
